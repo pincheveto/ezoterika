@@ -54,26 +54,78 @@ section h2 span {
   line-height: 0.85em;
 }
 
-.cards {
+.container {
   display: flex;
   width: 800px;
   height: 430px;
-  gap: 30px;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.icon {
+  height: 45px;
+}
+
+.card1 {
+  background-image: url(https://i.ibb.co/t2DX6CR/spiritual-coaching.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card2 {
+  background-image: url(https://i.ibb.co/JxqSbNF/numerology.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card3 {
+  background-image: url(https://i.ibb.co/BnMryFG/tarot.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card4 {
+  background-image: url(https://i.ibb.co/7vbrKC3/chakras.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.card5 {
+  background-image: url(https://i.ibb.co/CnxYBG1/metatron.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-radius: 15px;
   width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: 0.8;
-  transition: 0.3s ease;
-  border-radius: 8px;
+
+  height: 100%;
+  flex: 1;
+  transition: flex 0.5s ease;
+}
+
+.link {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  opacity: 0;
+}
+
+.title,
+.icon {
+  margin: 10px 15px;
 }
 
 .card:hover {
-  cursor: crosshair;
-  width: 300px;
+  flex: 5;
+}
+.card:hover a {
   opacity: 1;
+  filter: brightness(1);
 }
 
 header {
