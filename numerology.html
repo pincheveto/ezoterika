@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Numerology</title>
-    <script src="./numerology.js"></script>
+    <script src="./numerology.js" defer></script>
     <link rel="stylesheet" href="./numerology.css" />
   </head>
   <body>
@@ -190,8 +190,9 @@
       </div>
 
       <div class="button">
-        <input type="submit" value="Calcular numerología " />
+        <input type="submit" value="Calcular numerología " id="calcular" />
       </div>
+      <p id="resultado"></p>
     </section>
   </body>
 </html>
