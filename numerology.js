@@ -47,7 +47,7 @@ function numerabilizar() {
   for (let char of name.toUpperCase()) {
     suma += tablaPitagorica[char];
   }
-  _pResultado.innerText = "hola mundo";
+  _pResultado.innerText = "que pedro pinche pablo";
 }
 
 function calcular() {
